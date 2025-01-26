@@ -28,7 +28,7 @@ cd Ask-Your-Database-2.0
 1. Create a `.env` file in the `src` folder:
    ```plaintext
    API_KEY=your_api_key_here
-   GROQ_API_KEY=groq_api_key_here
+   GROQ_API_KEY=gour_groq_api_key_here
    ```
 2. Replace placeholders with your actual API keys.
 
