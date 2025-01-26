@@ -20,8 +20,8 @@ A Streamlit-based interactive chat application that connects to a MySQL database
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/chat-with-mysql.git
-cd chat-with-mysql
+git clone https://github.com/yourusername/Ask-Your-Database-2.0.git
+cd Ask-Your-Database-2.0
 ```
 
 ### Set Up Environment Variables
