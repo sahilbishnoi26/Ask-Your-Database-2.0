@@ -8,6 +8,8 @@ A Streamlit-based interactive chat application that connects to a MySQL database
 - Automatically generate SQL queries based on natural language inputs.
 - Execute queries and return results in user-friendly language.
 - Maintain a conversation history for context-aware query generation.
+- 
+![alt text](https://github.com/sahilbishnoi26/Ask-Your-Database-2.0/blob/main/docs/mysql-chains.png)
 
 ## Technologies Used
 - **Streamlit**: For building the interactive web app interface.
@@ -57,7 +59,7 @@ pip install -r requirements.txt
 3. Enter your MySQL database credentials in the sidebar and click "Connect."
 4. Ask questions in the chat input to interact with your database.
 
-![alt text]()
+![alt text](https://github.com/sahilbishnoi26/Ask-Your-Database-2.0/blob/main/docs/pic1.png)
 
 
 ## Troubleshooting
