@@ -71,4 +71,3 @@ pip install -r requirements.txt
   ```
 - **Virtual Environment Not Found**: Ensure the virtual environment is activated before running the app.
 - **`.env` File Not Found**: Verify that the `.env` file exists in the `src` directory with correct API keys.
-``````
