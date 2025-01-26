@@ -25,7 +25,7 @@ cd Ask-Your-Database-2.0
 ```
 
 ### Set Up Environment Variables
-1. Create a `.env` file in the `src` folder:
+1. Create a `.env` file:
    ```plaintext
    API_KEY=your_api_key_here
    GROQ_API_KEY=gour_groq_api_key_here
