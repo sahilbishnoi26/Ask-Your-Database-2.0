@@ -1,46 +1,72 @@
-# MySQL Python Chatbot with GPT-4 and Mistral AI
+# Ask-Your-Database-2.0
 
-A natural language SQL chatbot using GPT-4 that can interpret natural language queries, generate SQL queries, and fetch results from a SQL database, all in an intuitive and user-friendly way. It utilizes the power of OpenAI's GPT-4 model, integrated with a Streamlit GUI for an enhanced interaction experience.
-
+## Description
+A Streamlit-based interactive chat application that connects to a MySQL database, allowing users to ask questions about their data and receive SQL-generated responses in natural language.
 
 ## Features
-- **Natural Language Processing**: Uses GPT-4 to interpret and respond to user queries in natural language.
-- **SQL Query Generation**: Dynamically generates SQL queries based on the user's natural language input.
-- **Database Interaction**: Connects to a SQL database to retrieve query results, demonstrating practical database interaction.
-- **Streamlit GUI**: Features a user-friendly interface built with Streamlit, making it easy for users of all skill levels.
-- **Python-based**: Entirely coded in Python, showcasing best practices in software development with modern technologies.
+- Connect to a MySQL database using user-provided credentials.
+- Automatically generate SQL queries based on natural language inputs.
+- Execute queries and return results in user-friendly language.
+- Maintain a conversation history for context-aware query generation.
 
-## Brief Explanation of How the Chatbot Works
-
-The chatbot works by taking a user's natural language query, converting it into a SQL query using GPT-4, executing the query on a SQL database, and then presenting the results back to the user in natural language. This process involves several steps of data processing and interaction with the OpenAI API and a SQL database, all seamlessly integrated into a Streamlit application.
-
-Consider the following diagram to understand how the different chains and components are built:
-
-![Chatbot Architecture](./docs/mysql-chains.png)
-
+## Technologies Used
+- **Streamlit**: For building the interactive web app interface.
+- **LangChain**: For natural language understanding and query generation.
+- **MySQL Connector**: For connecting to and querying the MySQL database.
+  
 ## Installation
-Ensure you have Python installed on your machine. Then clone this repository:
 
+### Clone the Repository
 ```bash
-git clone [repository-link]
-cd [repository-directory]
+git clone https://github.com/yourusername/chat-with-mysql.git
+cd chat-with-mysql
 ```
 
-Install the required packages:
+### Set Up Environment Variables
+1. Create a `.env` file in the `src` folder:
+   ```plaintext
+   API_KEY=your_api_key_here
+   GROQ_API_KEY=groq_api_key_here
+   ```
+2. Replace placeholders with your actual API keys.
 
+### Create and Activate a Virtual Environment
+#### On Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### On macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-Create your own .env file with the necessary variables, including your OpenAI API key:
-
-```bash
-OPENAI_API_KEY=[your-openai-api-key]
-```
-
 ## Usage
-To launch the Streamlit app and interact with the chatbot:
+1. Run the application:
+   ```bash
+   streamlit run src\app.py
+   ```
+2. Open the provided URL in your browser.
+3. Enter your MySQL database credentials in the sidebar and click "Connect."
+4. Ask questions in the chat input to interact with your database.
 
-```bash
-streamlit run app.py
-```
+![alt text]()
+
+
+## Troubleshooting
+- **Database Connection Error**: Ensure your MySQL server is running and credentials are correct.
+- **Missing Dependencies**: Run `pip install -r requirements.txt` to ensure all dependencies are installed.
+- **Port Already in Use**: Stop any process using the Streamlit default port (`8501`) or specify a different port using:
+  ```bash
+  streamlit run src\app.py --server.port=<port_number>
+  ```
+- **Virtual Environment Not Found**: Ensure the virtual environment is activated before running the app.
+- **`.env` File Not Found**: Verify that the `.env` file exists in the `src` directory with correct API keys.
+``````
