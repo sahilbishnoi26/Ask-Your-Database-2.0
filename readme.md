@@ -60,7 +60,7 @@ pip install -r requirements.txt
 3. Enter your MySQL database credentials in the sidebar and click "Connect."
 4. Ask questions in the chat input to interact with your database.
 
-![alt text](https://github.com/sahilbishnoi26/Ask-Your-Database-2.0/blob/main/docs/pic1.png)
+![alt text](https://github.com/sahilbishnoi26/Ask-Your-Database-2.0/blob/main/docs/demo.png)
 
 
 ## Troubleshooting
