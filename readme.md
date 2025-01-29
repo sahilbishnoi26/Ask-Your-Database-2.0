@@ -1,17 +1,18 @@
 # Ask-Your-Database-2.0
 
 ## Description
-A Streamlit-based interactive chat application that connects to a MySQL database, allowing users to ask questions about their data and receive SQL-generated responses in natural language.
+A Streamlit app built using LangChain and state of the art open source DeepSeek R1 LLM via Groq, converts natural language questions into SQL queries, retrieves data from a MySQL database, and presents the results as natural language responses
 
 ## Features
 - Connect to a MySQL database using user-provided credentials.
 - Automatically generate SQL queries based on natural language inputs.
-- Execute queries and return results in user-friendly language.
+- Execute queries and return results in natural language.
 - Maintain a conversation history for context-aware query generation.
 - 
 ![alt text](https://github.com/sahilbishnoi26/Ask-Your-Database-2.0/blob/main/docs/mysql-chains.png)
 
 ## Technologies Used
+- UPDATE: `DeepSeek-R1-distill-llama-70`: Uses State of the Art LLM via Groq API, optionasl support for using OpenAI models
 - **Streamlit**: For building the interactive web app interface.
 - **LangChain**: For natural language understanding and query generation.
 - **MySQL Connector**: For connecting to and querying the MySQL database.
